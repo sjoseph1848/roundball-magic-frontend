@@ -1,13 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<div>
+<!-- <div>
   <p>{{game.city}}</p>
   <p>{{game.homeTeam}}</p>
   <p>{{game.homeTeamScore}}</p>
-</div>
+</div> -->
 
 <div *ngFor="let game of games">
   <p>{{game.home_team.full_name}}</p>
+  <p>{{game.home_team_score}}</p>
+  <p>{{game.visitor_team.full_name}}</p>
+  <p>{{game.visitor_team_score}}</p>
+  <br/>
 </div>
 
 <router-outlet></router-outlet>
