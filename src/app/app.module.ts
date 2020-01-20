@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 import { GameService } from './game.service';
 import { NavComponent } from './nav/nav.component';
 import { HeadlineComponent } from './home/headline/headline.component';
+import { HomeComponent } from './home/home/home.component';
+import { GamesComponent } from './games/games/games.component';
+import { PlayersComponent } from './players/players/players.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HeadlineComponent
+    HeadlineComponent,
+    HomeComponent,
+    GamesComponent,
+    PlayersComponent
   ],
   imports: [
     BrowserModule,
