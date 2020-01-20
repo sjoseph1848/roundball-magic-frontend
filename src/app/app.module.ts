@@ -4,9 +4,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GameService } from './game.service';
+import { NavComponent } from './nav/nav.component';
+import { HeadlineComponent } from './home/headline/headline.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavComponent,
+    HeadlineComponent
   ],
   imports: [
     BrowserModule,
