@@ -13,5 +13,10 @@ export class GameService {
     return this.http.get(url);
     }
 
+  getTodaysGames(){
+    let url = `https://us-central1-nba-bracket-b1361.cloudfunctions.net/api/games`;
+    return this.http.get(url);
+  }
+
   }
 
