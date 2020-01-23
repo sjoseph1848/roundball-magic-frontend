@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet"');
 /* You can add global styles to this file, and also import other style files */
 * {
-  margin: 0;
-  padding:0;
   box-sizing: border-box;
 }
 
@@ -14,23 +12,29 @@ html,body {
   line-height: 1.7em;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
 a {
   color: #232323;
   text-decoration: none;
 }
 
-h1, h2, h3 {
+/* h1, h2, h3 {
   padding-bottom: 20px;
-}
+} */
 
-p {
+/* p {
   margin: 10px 0;
-}
+} */
 
 /* Util Classes */
 
 .text-primary {
-  color:#337ab7;
+  color:white;
 }
 .container {
   margin: auto;
@@ -68,38 +72,10 @@ p {
   clear: both;
 }
 
-
-
 .l-heading {
 font-size: 40px;
 line-height: 1.2;
 }
 
-.main-footer {
-  background:black;
-  padding: 32px;
-  margin-top: 48px;
-}
 
-.main-footer__links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.main-footer__link {
-  display: inline-block;
-  margin: 0 16px;
-}
-
-.main-footer__link a {
-  color: white;
-  text-decoration: none;
-}
-
-.main-footer__link a:hover,
-.main-footer__link a:active {
-  color: #ccc;
-}
 
