@@ -9,6 +9,8 @@ import { HeadlineComponent } from './home/headline/headline.component';
 import { HomeComponent } from './home/home/home.component';
 import { GamesComponent } from './games/games/games.component';
 import { PlayersComponent } from './players/players/players.component';
+import { FooterComponent } from './footer/footer.component';
+import { NewsComponent } from './home/news/news.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,9 @@ import { PlayersComponent } from './players/players/players.component';
     HeadlineComponent,
     HomeComponent,
     GamesComponent,
-    PlayersComponent
+    PlayersComponent,
+    FooterComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

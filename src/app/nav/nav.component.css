@@ -3,6 +3,7 @@
   background: #232323;
   color: #fff;
   overflow: auto;
+  font-family: 'Bangers', cursive;
 }
 
 #navbar a {
@@ -27,11 +28,12 @@
   display: block;
   padding: 20px;
   text-align: center;
+  font-family: 'Bangers', cursive;
 }
 
 #navbar ul li a:hover,
 #navbar ul li a.current {
-  background: #337ab7;
+  background: #848482;
   color: #fff;
   text-decoration: none;
 }
