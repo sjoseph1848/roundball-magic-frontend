@@ -9,8 +9,12 @@
 <div *ngFor="let today of todaysGames" class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img class="team-logo" src="{{today.vTeam.logo}}" alt="Avatar" >
-      <img class="team-logo" src="{{today.hTeam.logo}}" alt="Avatar" >
+        <div class="flip-card-front__home">
+        <img class="team-logo visitor" src="{{today.vTeam.logo}}" alt="Avatar" >
+        </div>
+        <div class="flip-card-front__visitor">
+        <img class="team-logo home" src="{{today.hTeam.logo}}" alt="Avatar" >
+        </div>
     </div>
     <div class="flip-card-back">
       <p> {{ today.vTeam.fullName }}: {{ today.vTeam.score.points }}</p>
