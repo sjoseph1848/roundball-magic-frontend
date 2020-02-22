@@ -1,42 +1,10 @@
-<!-- <div *ngFor="let game of games">
-  <p>{{game.home_team.full_name}}</p>
-  <p>{{game.home_team_score}}</p>
-  <p>{{game.visitor_team.full_name}}</p>
-  <p>{{game.visitor_team_score}}</p>
-  <br/>
-</div> -->
-
-<!-- <div *ngFor="let today of todaysGames" class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <div class="flip-card-front__home">
-        <img
-          class="team-logo visitor"
-          src="{{ today.vTeam.logo }}"
-          alt="Avatar"
-        />
-      </div>
-      <div class="flip-card-front__visitor">
-        <img
-          class="team-logo home"
-          src="{{ today.hTeam?.logo }}"
-          alt="Avatar"
-        />
-      </div>
-    </div>
-    <div class="flip-card-back">
-      <p>{{ today.vTeam.fullName }}: {{ today.vTeam.score.points }}</p>
-      <p>{{ today.hTeam.fullName }}: {{ today.hTeam.score.points }}</p>
-    </div>
-  </div>
-</div> -->
-
-<section class="w3l-index-block2 py-5">
-  <div class="container py-md-3">
+<!-- <section class="w3l-index-block2 py-5"> -->
+  <!-- <div class="container py-md-3">
     <div class="heading text-center mx-auto">
       <h1 class="section-title">Who's Playing in the NBA Today</h1>
-    </div>
-    <div class="row bottom_grids pt-md-3">
+    </div> -->
+    <!--TODO:Break into separate component -->
+    <!-- <div class="row bottom_grids pt-md-3">
       <div *ngFor="let today of todaysGames" class="col-lg-4 col-md-6 mt-5">
         <div class="s-block">
           <img src="{{ today.hTeam.logo }}" alt="" class="img-home" />
@@ -44,5 +12,29 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+  <section class="py-5">
+    <div class="container py-md-3">
+      <div class="heading text-center mx-auto">
+        <h1>Who's Playing in the NBA Today</h1>
+      </div>
+        <div class="row">
+              <div *ngFor="let today of todaysGames" class="col-lg-4 col-md-6 mt-5 card">
+                <span class="team-imgs">
+                <img src="{{ today.hTeam.logo }}" alt="" class="card-img-top img-home"/>
+                <img src="{{ today.vTeam.logo }}" alt="" class="card-img-top img-away" />
+              </span>
+              <hr>
+              <div class="card-body">
+                <h5 class="card-title text-center">The Score</h5>
+                <p class="card-text">{{ today.vTeam.fullName }} : {{ today.vTeam.score.points }}  </p>
+                <p class="card-text">{{ today.hTeam.fullName }} : {{ today.hTeam.score.points }}  </p>
+                <p class="card-text">{{ today.currentPeriod }} </p>
+                <p class="card-text">{{ today.clock }} </p>
+              </div>
+              </div>
+        </div>
+    </div>
 </section>
+
+
